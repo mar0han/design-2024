@@ -1,0 +1,7 @@
+// Display Flex with space-between
+@mixin flex-container() {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
