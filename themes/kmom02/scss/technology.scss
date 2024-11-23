@@ -1,0 +1,93 @@
+/* technology.scss */
+.landingpage {
+  display: grid;
+  gap: 1.96rem;
+  margin-bottom: 1.96rem;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.landingpage a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+.box {
+  padding: 1.96rem;
+  border-radius: 10px;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.technology .article {
+  width: 60%;
+}
+
+.technology .menu {
+  width: 30%;
+}
+
+.css {
+  grid-column: span 1;
+  background-color: #ffc6ff;
+}
+
+.html {
+  grid-column: span 2;
+  background-color: #d0f4de;
+}
+
+.javascript {
+  grid-column: span 2;
+  background-color: #ffd6a5;
+}
+
+.php {
+  grid-column: span 1;
+  background-color: #9bf6ff;
+}
+
+.python {
+  grid-column: span 3;
+  background-color: #bdb2ff;
+}
+
+.git {
+  grid-column: span 1;
+  background-color: #fcf6bd;
+}
+
+.sqlite {
+  grid-column: span 2;
+  background-color: #ff99c8;
+}
+
+@media (max-width: 767px) {
+  .technology .menu {
+    display: none;
+  }
+
+  .technology .article {
+    width: 100%;
+  }
+
+  .box {
+    grid-column: span 1;
+  }
+  
+  .landingpage h1 {
+    grid-column: span 1;
+  }
+}

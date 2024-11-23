@@ -6437,6 +6437,16 @@ h1 {
   font-style: normal;
 }
 
+p {
+  font-size: 1.4em;
+  margin-bottom: 1.96rem;
+}
+
+a {
+  color: #292929;
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -6452,6 +6462,8 @@ h1 {
 }
 
 .nav a {
+  color: #292929;
+  text-decoration: none;
   font-size: 2rem;
 }
 
@@ -6564,4 +6576,95 @@ pre code {
   background: transparent;
   overflow-x: auto;
   line-height: 1.4;
+}
+
+/* technology.scss */
+.landingpage {
+  display: grid;
+  gap: 1.96rem;
+  margin-bottom: 1.96rem;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.landingpage a {
+  color: #292929;
+  text-decoration: none;
+}
+
+.box {
+  padding: 1.96rem;
+  border-radius: 10px;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.technology .article {
+  width: 60%;
+}
+
+.technology .menu {
+  width: 30%;
+}
+
+.css {
+  grid-column: span 1;
+  background-color: #FFC6FF;
+}
+
+.html {
+  grid-column: span 2;
+  background-color: #D0F4DE;
+}
+
+.javascript {
+  grid-column: span 2;
+  background-color: #FFD6A5;
+}
+
+.php {
+  grid-column: span 1;
+  background-color: #9BF6FF;
+}
+
+.python {
+  grid-column: span 3;
+  background-color: #BDB2FF;
+}
+
+.git {
+  grid-column: span 1;
+  background-color: #FCF6BD;
+}
+
+.sqlite {
+  grid-column: span 2;
+  background-color: #FF99C8;
+}
+
+@media (max-width: 767px) {
+  .technology .menu {
+    display: none;
+  }
+  .technology .article {
+    width: 100%;
+  }
+  .box {
+    grid-column: span 1;
+  }
+  .landingpage h1 {
+    grid-column: span 1;
+  }
 }
