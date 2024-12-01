@@ -6429,6 +6429,10 @@ body {
   font-style: normal;
 }
 
+li {
+  font-size: 1.4em;
+}
+
 h1 {
   color: #292929;
   font-family: "Bodoni Moda", serif;
@@ -6437,11 +6441,22 @@ h1 {
   font-style: normal;
 }
 
+p {
+  font-size: 1.4em;
+  margin-bottom: 1.96rem;
+}
+
+a {
+  color: #292929;
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
 }
 
 .site-header {
@@ -6452,6 +6467,8 @@ h1 {
 }
 
 .nav a {
+  color: #292929;
+  text-decoration: none;
   font-size: 2rem;
 }
 
@@ -6463,20 +6480,23 @@ a:hover {
   color: #6ed8d9;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .main {
   flex: 1 0 auto;
 }
 
-.header, .footer {
+.header,
+.footer {
   flex: 0 0 auto;
 }
 
@@ -6485,6 +6505,7 @@ body {
   max-width: 64rem;
   padding: 2rem;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .footer {
@@ -6494,16 +6515,17 @@ body {
   align-items: center;
   padding: 1.5em;
   background-color: #333;
-  color: white;
+  color: #fff;
 }
 .footer .social a {
   text-decoration: none;
   font-size: 3rem;
-  color: white;
+  color: #fff;
 }
 
 @media (max-width: 767px) {
-  .title, .logo {
+  .title,
+  .logo {
     padding: 1em 1em 1em 0;
   }
   .title {
@@ -6516,8 +6538,8 @@ body {
     max-width: 60%;
   }
 }
-.main img {
-  border-radius: 50%;
+.article img {
+  border-radius: 100%;
   max-width: 300px;
   margin: 1.5em auto;
   display: block;
@@ -6558,7 +6580,154 @@ pre code {
   margin: 0;
   padding: 1.1111em 0;
   border: 0 none;
-  background: transparent;
+  background: #f5f5f5;
   overflow-x: auto;
   line-height: 1.4;
+}
+
+/* technology.scss */
+.landingpage {
+  display: grid;
+  gap: 1.96rem;
+  margin-bottom: 1.96rem;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.landingpage a {
+  color: #292929;
+  text-decoration: none;
+}
+
+.box {
+  padding: 1.96rem;
+  border-radius: 10px;
+  color: #292929;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.technology .article {
+  width: 60%;
+}
+
+.technology .menu {
+  width: 30%;
+}
+
+.css {
+  grid-column: span 1;
+  background-color: #ffc6ff;
+}
+
+.html {
+  grid-column: span 2;
+  background-color: #d0f4de;
+}
+
+.javascript {
+  grid-column: span 2;
+  background-color: #ffd6a5;
+}
+
+.php {
+  grid-column: span 1;
+  background-color: #9bf6ff;
+}
+
+.python {
+  grid-column: span 3;
+  background-color: #bdb2ff;
+}
+
+.git {
+  grid-column: span 1;
+  background-color: #fcf6bd;
+}
+
+.sqlite {
+  grid-column: span 2;
+  background-color: #ff99c8;
+}
+
+@media (max-width: 767px) {
+  .technology .menu {
+    display: none;
+  }
+  .technology .article {
+    width: 100%;
+  }
+  .box {
+    grid-column: span 1;
+  }
+  .landingpage h1 {
+    grid-column: span 1;
+  }
+}
+.landingpage {
+  display: grid;
+  gap: 1.96rem;
+  margin-bottom: 1.96rem;
+}
+
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.landingpage a {
+  color: #292929;
+  text-decoration: none;
+}
+
+.box {
+  padding: 1.96rem;
+  border-radius: 10px;
+  color: #292929;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.technology .article {
+  width: 60%;
+}
+
+.technology .menu {
+  width: 30%;
+}
+
+@media (max-width: 767px) {
+  .technology .menu {
+    display: none;
+  }
+  .technology .article {
+    width: 100%;
+  }
+  .box {
+    grid-column: span 1;
+  }
+  .landingpage h1 {
+    grid-column: span 1;
+  }
 }

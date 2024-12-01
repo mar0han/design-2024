@@ -1,5 +1,6 @@
 .header {
   @include flex-container;
+  background-color: $nav-background-color;
 }
 
 .site-header {

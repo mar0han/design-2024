@@ -1,7 +1,7 @@
 .footer {
   @include flex-container;
   padding: 1.5em;
-  background-color: #333;
+  background-color: $footer-background-color;
   color: $footer-color;
 
   .social a {

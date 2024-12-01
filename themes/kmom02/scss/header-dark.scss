@@ -1,0 +1,21 @@
+.header {
+  @include flex-container;
+}
+  
+.site-header {
+  @include flex-container;
+}
+  
+.nav a {
+  color: $font-color;
+  text-decoration: none;
+  font-size: 2rem;
+}
+  
+.hidden {
+  display: none !important;
+}
+  
+a:hover {
+  color: $link-hover;
+}

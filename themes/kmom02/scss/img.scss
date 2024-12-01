@@ -1,6 +1,5 @@
-.main img {
-  border-radius: 50%;
-  max-width: 300px;
+.article img {
+  max-width: 600px;
   margin: 1.5em auto;
   display: block;
 }
@@ -8,4 +7,11 @@
 .logo img {
   max-width: 150px;
   margin: 1.5em;
+}
+
+.content img {
+  border-radius: 50%;
+  max-width: 300px;
+  margin: 1.5em auto;
+  display: block;
 }

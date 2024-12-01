@@ -1,0 +1,12 @@
+.footer {
+  @include flex-container;
+  padding: 1.5em;
+  background-color: $footer-background-color;
+  color: $footer-color;
+  
+  .social a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: $footer-color;
+  }
+}

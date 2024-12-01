@@ -1,0 +1,74 @@
+.landingpage {
+  display: grid;
+  gap: 1.96rem;
+  margin-bottom: 1.96rem;
+}
+  
+.landingpage h1 {
+  grid-column: span 3;
+  justify-self: center;
+}
+  
+.landingpage a {
+  color: $link-font-color;
+  text-decoration: none;
+}
+
+  
+.box {
+  padding: 1.96rem;
+  border-radius: 10px;
+  color: $link-font-color;
+}
+  
+.box:hover {
+  box-shadow: 10px 10px 5px 0 $box-shadow;
+}
+  
+.technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+  
+.technology .article {
+  width: 60%;
+}
+  
+.technology .menu {
+  width: 30%;
+}
+
+.colors {
+  grid-column: span 1;
+  background-color: #ffc6ff;
+}
+
+.load {
+  grid-column: span 1;
+  background-color: #d0f4de;
+}
+
+.design {
+  grid-column: span 1;
+  background-color: #ffd6a5;
+}
+  
+@media (max-width: 767px) {
+  .technology .menu {
+    display: none;
+  }
+  
+  .technology .article {
+    width: 100%;
+  }
+  
+  .box {
+    grid-column: span 1;
+  }
+    
+  .landingpage h1 {
+    grid-column: span 1;
+  }
+}

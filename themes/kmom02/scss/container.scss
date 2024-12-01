@@ -6,10 +6,12 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  background-color: $body-background-color;
 }
 
 .main {
   flex: 1 0 auto;
+  padding: 10px;
 }
 
 .header,
@@ -22,6 +24,7 @@ body {
   max-width: 64rem;
   padding: 2rem;
   margin: 0 auto;
+  background-color: $main-background-color;
 }
 
 
