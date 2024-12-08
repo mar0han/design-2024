@@ -27,4 +27,14 @@ body {
   background-color: $main-background-color;
 }
 
+.main h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
 

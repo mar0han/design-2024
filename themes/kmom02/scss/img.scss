@@ -9,9 +9,13 @@
   margin: 1.5em;
 }
 
-.content img {
+.me-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.me-image img {
   border-radius: 50%;
-  max-width: 300px;
-  margin: 1.5em auto;
-  display: block;
+  width: 250px;
 }

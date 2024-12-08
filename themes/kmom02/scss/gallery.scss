@@ -1,0 +1,83 @@
+img,
+ 
+embed,
+ 
+object,
+ 
+video {
+  max-width: 100%;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+   
+}
+
+.gallery-pic {
+  display: block;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.gallery-pic:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+.embed-container iframe {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 960px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main {
+    width: 80%;
+  }
+}
+    
+
+@media (max-width: 667px) {
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+    
+
+@media (max-width: 375px) {
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

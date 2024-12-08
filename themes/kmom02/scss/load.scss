@@ -1,0 +1,18 @@
+/* Style the container div */
+.table-load {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.table-load iframe {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+}
