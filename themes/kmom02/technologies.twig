@@ -7,7 +7,7 @@
         <div class="landingpage">
             {{ content }}
             {% for tech in meta.Techs %}
-                <a href="{{ base_url }}/technology/{{ tech.class }}" class="box {{ tech.class }}">
+                <a href="{{ base_url }}/technology/{{ tech.class }}" class="box {{ tech.class }}  aria-label="Link to page">
                         <h2>{{ tech.name }}</h2>
                 </a>
             {% endfor %}

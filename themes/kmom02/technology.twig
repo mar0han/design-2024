@@ -9,7 +9,7 @@
 
             {% for page in pages("technology") %}
                 <p>
-                    <a href="{{ page.url }}">{{ page.title }}</a>
+                    <a href="{{ page.url }}" aria-label="Link to page">{{ page.title }}</a>
                 </p>
             {% endfor %}
         </aside>

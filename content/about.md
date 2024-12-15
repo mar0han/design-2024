@@ -6,6 +6,8 @@ description: Tekniker jag använt.
 Tekniker
 ==========================
 
+<div class="wavy-line"></div>
+
 - **Pico CMS:** Används för att hantera Markdownfiler som gör om de till HTML.
 - **Twig:** Används för templates.
 - **SASS:** Jag använder SASS för styling istället för CSS.

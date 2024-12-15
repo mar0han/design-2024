@@ -28,8 +28,11 @@ I webbläsaren Microsoft Edge besökte jag tre olika hemsidor och med hjälp av 
 Resultat
 -----------------------
 
-*Crunchyroll*
-![screenshot](%assets_url%/img/crunchyroll.png)
+<picture>
+        <source media="(min-width: 668px)" srcset="%base_url%/image/crunchyroll.jpg?w=600&q=80">
+        <source media="(min-width: 376px)" srcset="%base_url%/image/crunchyroll.jpg?w=400&q=80"">
+        <img src="%base_url%/image/crunchyroll.jpg?w=375&h=211&crop-to-fit&q=80" alt="screenshot">
+</picture>
 
 Med verktyget TabColor kunde jag använda en color picker för att se vilka färger som använts på hemsidan. 
 
@@ -56,9 +59,13 @@ Typografi:
 
 Med verktyget CSS Peeper kunde jag inspektera hemsidan och se att för rubriker och vanlig text andvänds samma font Lato med några "fallback" fonts så som 'Helvetica Neue', helvetica och 'sans-serif'. Dom varierar texten med olika font-weight och storlek vilket ger sidan en mer ren och modern design. 
 
-
+<div class="wavy-line"></div>
 *W3Schools*
-![screenshot](%assets_url%/img/w3schools.png)
+<picture>
+        <source media="(min-width: 668px)" srcset="%base_url%/image/w3schools.jpg?w=600&q=80">
+        <source media="(min-width: 376px)" srcset="%base_url%/image/w3schools.jpg?w=400&q=80"">
+        <img src="%base_url%/image/w3schools.jpg?w=375&h=211&crop-to-fit&q=80" alt="screenshot">
+</picture>
 
 Med verktyget TabColor kunde jag använda en color picker för att se vilka färger som använts på hemsidan. 
 
@@ -88,8 +95,13 @@ Typografi:
 
 Med verktyget CSS Peeper kunde jag inspektera hemsidan och såg att deras rubriker använder fonten 'Segoe UI' med "fallback" fonts så som Arial och 'sans-serif'. Deras navmeny använder 'Source Sans Pro Topnav' medan deras sidmeny använder Verdana och båda har 'sans-serif' som "fallback" font. Även om dessa typsnitt inte skiljer sig så mycket från varandra ger det fortfarande en liten variation som ger en bra design.
 
+<div class="wavy-line"></div>
 *Amazon*
-![screenshot](%assets_url%/img/amazon.png)
+<picture>
+        <source media="(min-width: 668px)" srcset="%base_url%/image/amazon.jpg?w=600&q=80">
+        <source media="(min-width: 376px)" srcset="%base_url%/image/amazon.jpg?w=400&q=80"">
+        <img src="%base_url%/image/amazon.jpg?w=375&h=211&crop-to-fit&q=80" alt="screenshot">
+</picture>
 
 Med verktyget TabColor kunde jag använda en color picker för att se vilka färger som använts på hemsidan. 
 
@@ -128,12 +140,12 @@ Analys
 *Crunchyroll*
 
 Jag skulle säga att färgschemat är en blanding av analogt (orange/rödbrun) och komplementärt med de blå/gråa färgerna. Signatur färgen för Crunchyroll är orange och sidan använder sig av mörk bakgrund som passar till en streaming tjänst. Med ett typsnitt gör det sidan ren och lättläst, vilket gör det enkelt för användarna att fokusera på innehållet utan att bli distraherade av för många olika typsnitt.
-
+<div class="wavy-line"></div>
 *W3Schools*
 
 W3Schools använder en mer neutral och professionell palett som passar deras utbildningssyfte. Typsnitten är läsbara och designen strukturerad för att göra det lätt för användare att hitta information.
 De små skillnaderna i typsnitt för rubriker, navigeringsmeny och sidmeny hjälper till att göra det tydligare vad som är vad på sidan. Det gör att användaren lättare kan hitta information och förstå hur sidan är organiserad.
-
+<div class="wavy-line"></div>
 *Amazon*
 
 Amazon använder en stark blandning av färger för att fånga användarens uppmärksamhet, vilket är typiskt för en e-handelsplattform. Den lilla variationen i typsnitt hjälper till att göra informationen lättare att läsa och ger sidan en tydlig struktur, vilket gör det enklare för användaren att navigera.
